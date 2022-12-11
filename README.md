@@ -6,7 +6,7 @@
 The objective of this project is to display a map on a webpage that fetches the coordinates of all buses on the MBTA's route 1. This data is fetched from the MBTA's public API. Instead of displaying the same icon for every bus, the markers have a popup overhead that displays the bus number. Markers are easily differentiable because each popup is a different colour. Markers are erased and reloaded every 15 seconds with the latest bus locations. 
 
 ## How to Run
-To run the tracker, begin by downloading this repository. Once installed, open index.html in a new browser tab. 
+To run the tracker, begin by downloading this repository. Once installed, open index.html in a new browser tab and buses will be marked upon launch, automatically updating every 15 seconds.  
 
 ## Roadmap of Future Improvements
 First, you can replace my mapbox token with your own by creating an account on mapbox.com. Future improvements can include a refresh button to bypass the 15 second timer. Also, pop-ups that are overlapping due to buses' close proximity can be clicked bringing the selected pop-up to the top for easy identification of these partially covered bus numbers. 
