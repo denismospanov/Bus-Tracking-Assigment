@@ -9,15 +9,18 @@ var map = new mapboxgl.Map({
 
 
 const colors = [
-	'#f44336',
-	'#4caf50',
-	'#e91e63',
-	'#ffc107',
-	'#9c27b0',
-	'#cddc39',
-	'#673ab7',
-	'#8bc34a',
-	'#3f51b5',
+    '#FF0000', 
+    '#00FF00',
+    '#0000FF',
+    '#3f51b5',
+    '#9c27b0',
+    '#f44336', 
+    '#4caf50', 
+    '#673ab7', 
+    '#8bc34a', 
+    '#ffc107', 
+    '#cddc39',
+    '#e91e63' 
   ]
 
 var busMarkers = [];
@@ -36,7 +39,7 @@ async function run(){
 		busMarkers.push(marker);	
 	});
 
-	function eraseMarks(){
+	function eraseMarkers(){
 		if (busMarkers!==null) {
 		for (var i = busMarkers.length - 1; i >= 0; i--) {
 		busMarkers[i].remove();
@@ -49,7 +52,7 @@ async function run(){
 		popUp[i].style.background = colors[i];
 	});
 
-	setTimeout(eraseMarks,14000)
+	setTimeout(eraseMarkers,14000)
 
 	// timer
 	setTimeout(run, 15000);
